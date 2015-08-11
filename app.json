@@ -5,9 +5,7 @@
   "repository": "https://github.com/tsykoduk/TD-to-PG-to-SFDC",
   "logo": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
   "scripts": {},
-  "env": {
-    "RAILS_ENV": "production"
-  },
+  "env": {},
   "addons": ["heroku-postgresql", "herokuconnect", "papertrail","treasure-data"]
 
 }
