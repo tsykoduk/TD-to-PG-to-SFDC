@@ -9,4 +9,12 @@ To install
 ``heroku addons:create heroku-postgres``
 ``heroku addons:create herokuconnect``
 
-profit?
+Or click this button:
+
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+#Notes:
+
+#THIS USES NON-FREE ADDONS
+#You will need a SFDC org that you can push data to
