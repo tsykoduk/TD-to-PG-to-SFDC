@@ -23,9 +23,11 @@ Bundler.require
     job.update_status!  # get latest info
     i = 0
     job.result_each { |row| 
-      put_into_pg(row[1],row[2],row[4],row[5],row[6], row[7])
       i = 1 + i
-      puts "inserted row # " + i.to_s
+      if i < 501
+        put_into_pg(row[1],row[2],row[4],row[5],row[6], row[7])
+        puts "inserted row # " + i.to_s
+      end
      }
   end
 
@@ -46,7 +48,6 @@ Bundler.require
     i = 0
     foos.each do |foo|
       i = i + 1
-      puts "moved row #" + i " into SFDC"
       bar = SfdcWwwAccess.new
       bar.host__c = foo.host
       bar.path__c = foo.path
@@ -55,6 +56,7 @@ Bundler.require
       bar.size__c = foo.size
       bar.method__c = foo.method
       bar.save!
+      puts "moved row #" + i.to_s " into SFDC"
     end
   end
   
@@ -63,8 +65,8 @@ Bundler.require
     i = 0
     rec.each do |r|
       i = i +1
-      puts "removed record #" + i
       r.delete
+      puts "removed record #" + i.to_s      
     end
   end
   
@@ -73,8 +75,8 @@ Bundler.require
     i = 0
     rec.each do |r|
       i = i +1
-      puts "removed record #" + i
       r.delete
+      puts "removed record #" + i.to_s
     end
   end
   
