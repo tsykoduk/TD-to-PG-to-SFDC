@@ -4,6 +4,7 @@ require 'active_record'
 require 'uri'
 require 'td'
 require 'td-client'
+require 'tilt/erubis'
 
 Bundler.require
 
@@ -26,6 +27,16 @@ class App < Sinatra::Base
     put_into_sfdc()
     redirect to('/')
   end
+  
+  get "/clean-sfdc" do
+    clean_sfdc()
+    redirect to('/')
+  end
+  
+  get "/clean-staging" do
+    clean_td()
+    redirect to('/')
+  end    
   
   
   
