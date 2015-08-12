@@ -1,0 +1,11 @@
+{
+  "name": "Heroku Data Warehouse Demo",
+  "description": "A super basic rails CRUD app to showcase Heroku Connect. This uses NON-FREE ADDONS!!",
+  "website": "https://github.com/tsykoduk/TD-to-PG-to-SFDC",
+  "repository": "https://github.com/tsykoduk/TD-to-PG-to-SFDC",
+  "logo": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
+  "scripts": {},
+  "env": {},
+  "addons": ["heroku-postgresql", "herokuconnect", "papertrail","treasure-data"]
+
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>
+			Welcome to the Treasure Data -&gt; SFDC demo
+		</h1>
+		<p>Currently we have <%= @td_count %> records in our staging table and <%= @sfdc_count %> in our SFDC Sync table</p>
+		<p>Do you want to <a href="/pull-from-td">load data from Treasure Data into the Staging Table</a>?</p>
+		<p>Do you want to <a href="/put-into-sfdc">load data from the Staging Table in to the Heroku Connect table</a>?</p>
+	</body>
+</html>

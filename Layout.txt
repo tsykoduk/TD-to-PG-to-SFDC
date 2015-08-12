@@ -1,0 +1,4 @@
+SFDC accounts object <-> Postgres
+Postgres -> MySQL
+Postgres -> TD
+Postgres <- MySQL?
