@@ -16,6 +16,7 @@ Or click this button:
 
 To set up:
 
+* You might upgrade to a production version of Heroku Connect (```heroku addons:upgrade herokuconnect:test```)
 * On your SFDC instance, create a custom object called ```WwwAccess```
 * In that object, create the following custom fields:
   * agent__c:  textarea
@@ -25,7 +26,7 @@ To set up:
   * path__c: textarea
   * size__c: double
   * user__c: double
-* Hook Heroku Connect up to sync that object and field
+* Hook Heroku Connect up to sync that object and all of those custom fields
 * Insure that you have the following tables in your Postgres Database:
 
 	
@@ -41,6 +42,3 @@ Notes:
 
 * THIS USES NON-FREE ADDONS
 * You will need a SFDC org that you can push data to
-* currently you will need to use ```irb``` on a one-off dyno (ie, ```heroku run bash```) to call the methods.
-* You will need to load the app into the irb session, ie ```require ./app.rb```
-* You'll call ```get_from_td()``` first, and then ```put_int_sfdc()``` secondly. You should see the data flowing
