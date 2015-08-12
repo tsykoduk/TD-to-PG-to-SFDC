@@ -70,7 +70,7 @@ Bundler.require
     end
   end
   
-  def clean_td_data()
+  def clean_td()
     rec = WwwAccess.all
     i = 0
     rec.each do |r|
