@@ -46,7 +46,7 @@ Dir["./models/*.rb"].each {|file| require file }
      bar.size__c = foo.size
      bar.method__c = foo.method
      bar.save!
-     puts "moved row #" + i.to_s " into SFDC"
+     puts "moved row #" + i.to_s + " into SFDC"
    end
  end
  
