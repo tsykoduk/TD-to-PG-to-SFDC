@@ -43,7 +43,10 @@ Bundler.require
   
   def put_into_sfdc
     foos = WwwAccess.all
+    i = 0
     foos.each do |foo|
+      i = i + 1
+      puts "moved row #" + i " into SFDC"
       bar = SfdcWwwAccess.new
       bar.host__c = foo.host
       bar.path__c = foo.path
@@ -57,14 +60,20 @@ Bundler.require
   
   def clean_sfdc()
     rec = SfdcWwwAccess.all
+    i = 0
     rec.each do |r|
+      i = i +1
+      puts "removed record #" + i
       r.delete
     end
   end
   
   def clean_td_data()
     rec = WwwAccess.all
+    i = 0
     rec.each do |r|
+      i = i +1
+      puts "removed record #" + i
       r.delete
     end
   end
