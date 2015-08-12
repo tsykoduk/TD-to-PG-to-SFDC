@@ -6,6 +6,6 @@
   "logo": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
   "scripts": {"postdeploy": "bundle exec rake db:migrate"},
   "env": {},
-  "addons": ["heroku-postgresql", "herokuconnect", "papertrail","treasure-data"]
+  "addons": ["heroku-postgresql:standard-0", "herokuconnect", "papertrail","treasure-data"]
 
 }
