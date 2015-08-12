@@ -1,6 +1,6 @@
 class AddWwwAccess < ActiveRecord::Migration
   def up
-    create_table :WwwAccess do |t|
+    create_table :wwwaccess do |t|
       t.integer :time
       t.integer :user
       t.string :host

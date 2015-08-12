@@ -71,6 +71,6 @@ Bundler.require
   
   
   def put_into_mysql()
-    
+    #what if we want to move the data to MySQL or some other datastore? How about we do that here?
   end
 
