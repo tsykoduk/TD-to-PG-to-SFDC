@@ -15,7 +15,7 @@ class App < Sinatra::Base
   get "/" do
     @td_count = WwwAccess.all.count
     @sfdc_count = SfdcWwwAccess.all.count
-    erb :index
+    erb :index, :layout => :theme
   end
   
   get "/pull-from-td" do
