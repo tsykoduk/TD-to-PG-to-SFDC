@@ -18,7 +18,7 @@ class App < Sinatra::Base
   end
   
   get "/pull-from-td" do
-    pull_from_td()
+    get_from_td()
     redirect to('/')  
   end
   
