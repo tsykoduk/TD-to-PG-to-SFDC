@@ -28,14 +28,14 @@ To set up:
 * Hook Heroku Connect up to sync that object and field
 * Insure that you have the following tables in your Postgres Database:
 
-`    
-    shrouded-plains-6761::DATABASE=> \dt 
-                      List of relations
-     Schema     |       Name        | Type  |           
-    ------------+-------------------+-------+
-    public      | wwwaccess         | table | 
-    salesforce  | wwwaccess__c      | table | 
-`    
+	
+		shrouded-plains-6761::DATABASE=> \dt 
+		List of relations
+		Schema     |       Name        | Type  |           
+		------------+-------------------+-------+
+		public      | wwwaccess         | table | 
+		salesforce  | wwwaccess__c      | table | 
+	
 
 Notes:
 
